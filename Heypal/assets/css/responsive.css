@@ -1,0 +1,116 @@
+@media screen and (max-width: 1199px) {
+    .side-col {
+        transform: translateX(-100%);
+        transition: transform 0.45s linear;
+    }
+
+    .side-col.active {
+        transform: translateX(0);
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .content-main {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .side-col #close-sidebar {
+        position: absolute;
+        right: 18.55px;
+        top: 18.55px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /* body {
+        background-color: yellow;
+    } */
+
+    .toggle {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        font-size: 1.35rem;
+        border-radius: 2.45rem;
+        background-color: var(--bs-gray-300);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .search {
+        position: fixed;
+        top: -7.3rem;
+        padding: 1.35rem 0;
+        width: 100%;
+        left: 0;
+        z-index: -1;
+        background-color: var(--bs-white);
+        border-top: 1.5px solid var(--bs-gray-300);
+        transition: top 0.35s linear;
+    }
+
+    .search.active {
+        top: 3.25rem;
+    }
+
+    .search form {
+        width: 100%;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .search-bar{
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        border: none;
+    }
+
+    .search-bar form{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card .card-header .card-img {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .carousel .carousel-item {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-link-group {
+        justify-content: center;
+    }
+
+    .nav-link-group .nav-link {
+        padding: .55rem .36rem;
+        font-size: 1rem;
+    }
+
+    .call-history-table .thead .th svg {
+        font-size: 1rem;
+    }
+
+    .call-history-table .thead .th:first-child span {
+        display: none;
+    }
+
+    .call-history-table .tbody> :first-child {
+        gap: .54rem;
+        flex-direction: column;
+    }
+
+    .call-history-table .tbody .td:first-child img {
+        display: none;
+    }
+}
